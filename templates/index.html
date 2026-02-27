@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Irrigação Automática</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Sistema de Irrigação Automática</h1>
+
+<div class="container">
+    <h2>Umidade do Solo: <span id="valor">0</span>%</h2>
+
+    <img id="estadoSolo" src="/static/img/ideal.png" width="200">
+
+    <div class="leds">
+        <div id="ledVermelho" class="led vermelho"></div>
+        <div id="ledVerde" class="led verde"></div>
+        <div id="ledAzul" class="led azul"></div>
+    </div>
+
+    <h3>Bomba:</h3>
+    <img id="bombaImg" src="/static/img/bomba_off.png" width="400">
+    <input type="range" id="sliderUmidade" min="0" max="100" value="50" style="width: 100%; margin: 20px 0;">
+    <p>Arraste para simular a umidade manualmente</p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
